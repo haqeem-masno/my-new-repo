@@ -1,16 +1,16 @@
 interface Library {
-    staff : Staff,
-    member : Member,
-    book : Book
-    rent : Rent
+    staff : Staff;
+    member : Member;
+    book : Book;
+    rent : Rent;
 }
 
 interface Book {
-    title : string,
-    author : string,
-    yearPublication : string,
-    publisher : string,
-    lending : Lending
+    title : string;
+    author : string;
+    yearPublication : string;
+    publisher : string;
+    lending : Lending;
 }
 
 interface Staff {
@@ -18,37 +18,37 @@ interface Staff {
     position : string;
     address : string;
     ic : string;
-    membership? : Membership
+    membership? : Membership;
 
 }
 
 interface Member {
-    ic : string,
-    name : string,
-    address : string,
-    membership? : Membership
+    ic : string;
+    name : string;
+    address : string;
+    membership? : Membership;
 }
 
 interface Membership {
-    memberId : string,
-    lending : Lending,
-    rent : Rent
+    memberId : string;
+    lending : Lending;
+    rent : Rent;
 }
 
 interface Lending {
-    dateCheckin : string,
-    dateCheckout : string,
-    fine : Fine
+    dateCheckin : string;
+    dateCheckout : string;
+    fine : Fine;
 }
 
 interface Rent {
-    room : Room,
-    media : Media
+    room : Room;
+    media : Media;
 }
 
 class Fine {
     amount : number;
-    description : string
+    description : string;
 
 
 }
